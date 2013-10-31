@@ -53,4 +53,5 @@ group :test do
   # Style checkers
   gem 'rubocop'
   gem 'scss-lint'
+  gem 'coffeelint'
 end
