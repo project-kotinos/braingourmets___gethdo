@@ -52,6 +52,7 @@ end
 group :test do
   # Style checkers
   gem 'rubocop'
+  gem 'rails_best_practices'
   gem 'scss-lint'
   gem 'coffeelint'
 end
