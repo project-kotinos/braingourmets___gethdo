@@ -5,8 +5,12 @@ require File.expand_path('../config/application', __FILE__)
 
 Gethdo::Application.load_tasks
 
-task test: :rubocop
+task test: [:rubocop, :scss_lint]
 
 task :rubocop do
   sh 'rubocop --rails app/ test/'
+end
+
+task :scss_lint do
+  sh 'scss-lint app/assets/stylesheets/'
 end
