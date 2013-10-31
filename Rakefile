@@ -4,3 +4,9 @@
 require File.expand_path('../config/application', __FILE__)
 
 Gethdo::Application.load_tasks
+
+task test: :rubocop
+
+task :rubocop do
+  sh 'rubocop --rails app/ test/'
+end
