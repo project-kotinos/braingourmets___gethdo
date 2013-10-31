@@ -15,11 +15,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
-# Use CoffeeScript source maps
-group :development do
-  gem 'coffee-rails-source-maps'
-end
-
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -49,5 +44,12 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# Style checkers
-gem 'rubocop'
+group :development do
+  # Use CoffeeScript source maps
+  gem 'coffee-rails-source-maps'
+end
+
+group :test do
+  # Style checkers
+  gem 'rubocop'
+end
