@@ -1,15 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  gender: 1
-  first_name: MyString
-  last_name: MyString
   email: MyString
-  email_is_validated: false
 
 two:
-  gender: 1
-  first_name: MyString
-  last_name: MyString
   email: MyString
-  email_is_validated: false
