@@ -19,7 +19,10 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  database: <%= ENV['DATABASE_NAME_PRODUCTION'] %>
   pool: 5
-  timeout: 5000
+  username: <%= ENV['DATABASE_USERNAME_PRODUCTION'] %>
+  password: <%= ENV['DATABASE_PASSWORD_PRODUCTION'] %>
+  socket: <%= ENV['DATABASE_SOCKET_PRODUCTION'] %>

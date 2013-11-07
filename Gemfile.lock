@@ -70,6 +70,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.2)
+    mysql2 (0.3.14)
     parser (2.0.0)
       ast (~> 1.1)
       slop (~> 3.4, >= 3.4.5)
@@ -163,6 +164,7 @@ DEPENDENCIES
   coffeelint
   jbuilder (~> 1.2)
   jquery-rails
+  mysql2
   rails (= 4.0.1)
   rails_best_practices
   rubocop

@@ -1,0 +1,7 @@
+# Copy this file to local_env.yml, set the corresponding values, and delete
+# this line.
+
+DATABASE_NAME_PRODUCTION: ''
+DATABASE_USERNAME_PRODUCTION: ''
+DATABASE_PASSWORD_PRODUCTION: ''
+DATABASE_SOCKET_PRODUCTION: '/var/run/mysqld/mysqld.sock'
