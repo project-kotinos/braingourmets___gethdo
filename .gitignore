@@ -25,5 +25,5 @@
 # Ignore the local configuration file.
 /config/local_env.yml
 
-# Ignore source maps.
-/public/assets/source_maps/*
+# Ignore generated assets.
+/public/assets/*
