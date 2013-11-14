@@ -6,8 +6,14 @@ gem 'rails', '4.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+# Use the current Sass release Media Mark (compatible to Compass 0.2.12)
+gem 'sass', '~> 3.2.12'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+
+# Use Compass for Sass
+gem 'compass', '~> 0.12.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
