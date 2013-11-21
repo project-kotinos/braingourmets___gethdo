@@ -41,7 +41,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Augthentication
+# Authentication
 gem 'devise', '~> 3.2.0'
 
 # Use unicorn as the app server
