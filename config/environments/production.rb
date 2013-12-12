@@ -1,7 +1,7 @@
 Gethdo::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.action_mailer.default_url_options = { :host => "gethdo.local" }
+  config.action_mailer.default_url_options = { host: ENV['HOSTNAME_PRODUCTION'] }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
