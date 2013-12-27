@@ -25,4 +25,5 @@ production:
   pool: 5
   username: <%= ENV['DATABASE_USERNAME_PRODUCTION'] %>
   password: <%= ENV['DATABASE_PASSWORD_PRODUCTION'] %>
+  host: <%= ENV['DATABASE_HOST_PRODUCTION'] %>
   socket: <%= ENV['DATABASE_SOCKET_PRODUCTION'] %>
