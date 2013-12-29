@@ -23,7 +23,7 @@ task :rails_best_practices do
 end
 
 task :brakeman do
-  sh 'brakeman'
+  sh 'brakeman -z'
 end
 
 task :scss_lint do
