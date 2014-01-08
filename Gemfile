@@ -15,6 +15,9 @@ gem 'sass-rails', '~> 4.0.0'
 # Use Compass for Sass
 gem 'compass', '~> 0.12.2'
 
+# Use Sass mixin library Bourbon (http://bourbon.io)
+gem 'bourbon', '~> 3.1.8'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
