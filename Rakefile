@@ -16,7 +16,7 @@ task :travis_lint do
 end
 
 task :rubocop do
-  sh 'rubocop --rails app/ test/'
+  sh 'rubocop --rails app/'
 end
 
 task :reek do
