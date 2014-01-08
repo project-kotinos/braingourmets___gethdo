@@ -20,4 +20,18 @@ class UserTest < ActiveSupport::TestCase
     assert user.invalid?
     assert_equal ['has already been taken'], user.errors[:email]
   end
+
+  test 'E-mail address without @ is invalid' do
+    user = User.new(email: 'john at example.com', encrypted_password: '0213231ab2')
+
+    assert user.invalid?
+    assert user.errors[:email].any?
+    assert_equal ['is invalid'], user.errors[:email]
+  end
+
+  test 'Valid e-mail address is valid' do
+    user = User.new(email: 'john@example.com', encrypted_password: '0213231ab2')
+
+    assert user.errors[:email].empty?
+  end
 end
