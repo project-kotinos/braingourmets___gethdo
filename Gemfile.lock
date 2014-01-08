@@ -46,7 +46,7 @@ GEM
       terminal-table (~> 1.4)
     builder (3.1.4)
     chunky_png (1.2.9)
-    code_analyzer (0.4.3)
+    code_analyzer (0.4.4)
       sexp_processor
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -76,7 +76,7 @@ GEM
     execjs (2.0.2)
     fastercsv (1.5.5)
     fssm (0.2.10)
-    haml (4.0.4)
+    haml (4.0.5)
       tilt
     highline (1.6.20)
     hike (1.2.3)
@@ -96,7 +96,7 @@ GEM
     multi_json (1.8.2)
     mysql2 (0.3.14)
     orm_adapter (0.5.0)
-    parser (2.1.1)
+    parser (2.1.2)
       ast (~> 1.1)
       slop (~> 3.4, >= 3.4.5)
     polyglot (0.3.3)
