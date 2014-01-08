@@ -1,9 +1,7 @@
 # This model represents a user, i.e., a person that can log in.
 class User < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :lockable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
-  validates :email, :encrypted_password, presence: true
+  validates :encrypted_password, presence: true
 end
