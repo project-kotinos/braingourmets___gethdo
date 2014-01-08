@@ -4,8 +4,6 @@ require 'rails/test_help'
 
 # Generic test case.
 class ActiveSupport::TestCase
-  include Devise::TestHelpers
-
   ActiveRecord::Migration.check_pending!
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical
@@ -16,4 +14,8 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+end
+
+class ActionController::TestCase
+  include Devise::TestHelpers
 end
