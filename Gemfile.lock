@@ -210,6 +210,7 @@ DEPENDENCIES
   coffeelint
   compass (~> 0.12.2)
   devise (~> 3.2.0)
+  haml (~> 4.0.3)
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
