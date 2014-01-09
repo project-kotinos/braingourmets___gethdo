@@ -7,8 +7,8 @@ require File.expand_path('../config/application', __FILE__)
 Gethdo::Application.load_tasks
 
 task test: [
-    :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman, :scss_lint,
-    :coffeelint
+    :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman,
+    :scss_lint, :coffeelint
 ]
 
 task :travis_lint do
@@ -16,11 +16,11 @@ task :travis_lint do
 end
 
 task :rubocop do
-  sh 'rubocop --rails app/'
+  sh 'rubocop --rails app/ test/ Gemfile Rakefile'
 end
 
 task :reek do
-  sh 'reek app/'
+  sh 'reek app/ test/ Gemfile Rakefile'
 end
 
 task :rails_best_practices do
