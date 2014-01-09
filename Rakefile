@@ -16,11 +16,11 @@ task :travis_lint do
 end
 
 task :rubocop do
-  sh 'rubocop --rails app/ test/ Rakefile'
+  sh 'rubocop --rails app/ test/ Gemfile Rakefile'
 end
 
 task :reek do
-  sh 'reek app/ test/ Rakefile'
+  sh 'reek app/ test/ Gemfile Rakefile'
 end
 
 task :rails_best_practices do
