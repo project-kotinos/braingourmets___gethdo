@@ -6,6 +6,9 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+# Use Haml for HTML templates (http://haml.info)
+gem 'haml', '~> 4.0.3'
+
 # Use the current Sass release Media Mark (compatible to Compass 0.2.12)
 gem 'sass', '~> 3.2.12'
 
