@@ -69,6 +69,7 @@ group :test do
   gem 'reek'
   gem 'rails_best_practices'
   gem 'brakeman'
+  gem 'haml-lint'
   gem 'scss-lint'
   gem 'coffeelint'
 end
