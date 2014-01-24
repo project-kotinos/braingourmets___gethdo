@@ -62,8 +62,8 @@ group :development do
   gem 'coffee-rails-source-maps'
 end
 
+# Style checkers
 group :test do
-  # Style checkers
   gem 'travis-lint'
   gem 'rubocop'
   gem 'reek'
@@ -72,4 +72,10 @@ group :test do
   gem 'haml-lint'
   gem 'scss-lint'
   gem 'coffeelint'
+end
+
+# Testing
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
