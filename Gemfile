@@ -60,6 +60,8 @@ end
 group :development do
   # Use CoffeeScript source maps
   gem 'coffee-rails-source-maps'
+  # Provide better Sprockets errors (only necessary for Rails < 4.1)
+  gem 'sprockets_better_errors'
 end
 
 group :test do
