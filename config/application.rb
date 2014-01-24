@@ -7,6 +7,7 @@ require 'rails/all'
 Bundler.require(:default, Rails.env)
 
 module Gethdo
+  # The configuration for this application.
   class Application < Rails::Application
     # Enable i18n warnings to avoid the deprecation warning.
     config.i18n.enforce_available_locales = true
