@@ -9,25 +9,25 @@ group :development, :test do
 end
 
 # Use Haml for HTML templates (http://haml.info)
-gem 'haml', '~> 4.0.3'
+gem 'haml'
 
 # Use the current Sass release Media Mark (compatible to Compass 0.2.12)
 gem 'sass', '~> 3.2.12'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Compass for Sass
 gem 'compass', '~> 0.12.2'
 
 # Use Sass mixin library Bourbon (http://bourbon.io)
-gem 'bourbon', '~> 3.1.8'
+gem 'bourbon'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -40,7 +40,7 @@ gem 'turbolinks'
 # gem 'jbuilder', '~> 1.2'
 
 # Use Twitter Bootstrap Sass Rails
-gem 'bootstrap-sass-rails', '~> 3.0.0'
+gem 'bootstrap-sass-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -51,7 +51,7 @@ end
 gem 'valle'
 
 # Authentication
-gem 'devise', '~> 3.2.0'
+gem 'devise'
 
 group :production do
   gem 'mysql2'
