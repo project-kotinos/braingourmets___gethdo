@@ -62,6 +62,9 @@ group :development do
   gem 'coffee-rails-source-maps'
   # Provide better Sprockets errors (only necessary for Rails < 4.1)
   gem 'sprockets_better_errors'
+  # Provide better error pages
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 # Style checkers
