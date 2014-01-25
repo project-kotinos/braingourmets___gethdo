@@ -11,6 +11,8 @@ describe HomeController do
       expect(response).to render_template layout: 'layouts/application'
     end
 
+    # render_views can be removed once this test has been moved to an
+    # acceptance test.
     it 'include the JustWorkshops title' do
       get :index
 
