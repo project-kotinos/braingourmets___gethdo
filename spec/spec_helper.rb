@@ -40,4 +40,9 @@ RSpec.configure do |config|
 
   # use named routes
   config.include Rails.application.routes.url_helpers
+
+  config.expect_with :rspec do |c|
+    # Disable the "should" syntax.
+    c.syntax = :expect
+  end
 end

@@ -7,14 +7,14 @@ describe HomeController do
       get :index
 
       assert_response :success
-      response.should render_template 'home/index'
-      response.should render_template layout: 'layouts/application'
+      expect(response).to render_template 'home/index'
+      expect(response).to render_template layout: 'layouts/application'
     end
 
     it 'include the JustWorkshops title' do
       get :index
 
-      response.body.should include('Gethdo: Getting your things done.')
+      expect(response.body).to include('Gethdo: Getting your things done.')
     end
   end
 end
