@@ -67,8 +67,8 @@ group :development do
   gem 'binding_of_caller'
 end
 
-# Style checkers
-group :test do
+group :development, :test do
+  # Style checkers
   gem 'travis-lint'
   gem 'rubocop'
   gem 'reek'
@@ -77,10 +77,9 @@ group :test do
   gem 'haml-lint'
   gem 'scss-lint'
   gem 'coffeelint'
-end
 
-# Testing
-group :development, :test do
+  # Testing
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'spring'
 end
