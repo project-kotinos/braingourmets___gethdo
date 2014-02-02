@@ -3,11 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-end
-
 # Use Haml for HTML templates (http://haml.info)
 gem 'haml'
 
@@ -42,11 +37,6 @@ gem 'turbolinks'
 # Use Twitter Bootstrap Sass Rails
 gem 'bootstrap-sass-rails'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
-
 # Automatic length validation for field values
 gem 'valle'
 
@@ -55,6 +45,11 @@ gem 'devise'
 
 group :production do
   gem 'mysql2'
+end
+
+group :development, :test do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
 end
 
 group :development do
@@ -67,7 +62,7 @@ group :development do
   gem 'binding_of_caller'
 end
 
-group :development, :test do
+group :test do
   # Style checkers
   gem 'travis-lint'
   gem 'rubocop'
@@ -82,4 +77,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'spring'
+end
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
 end
