@@ -30,8 +30,8 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster.
 gem 'turbolinks'
 
-# Use Twitter Bootstrap Sass Rails
-gem 'bootstrap-sass-rails'
+# Use Twitter Bootstrap Sass
+gem 'bootstrap-sass'
 
 # Automatic length validation for field values
 gem 'valle'
