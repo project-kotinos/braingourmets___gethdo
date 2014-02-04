@@ -37,10 +37,6 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.0.1)
       sass (~> 3.2)
-    bootstrap-sass-rails (3.1.0.0)
-      bootstrap-sass (~> 3.1.0.0)
-      railties (>= 3.2.0)
-      sass-rails (>= 3.2.0)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -255,7 +251,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  bootstrap-sass-rails
+  bootstrap-sass
   bourbon
   brakeman
   coffee-rails
