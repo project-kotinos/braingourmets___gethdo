@@ -40,3 +40,7 @@ end
 task :scss_lint do
   sh 'scss-lint app/assets/stylesheets/'
 end
+
+task :yard do
+  sh 'yard doc'
+end
