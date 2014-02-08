@@ -1,4 +1,8 @@
+##
 # Generic application controller.
+#
+# @author Oliver Klee
+#
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
@@ -8,6 +12,9 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  ##
+  # Sets the locale from the parameters using the default locale as a fallback.
+  #
   def set_i18n_local_from_parameters
     locale = params[:locale]
     if locale
@@ -22,6 +29,11 @@ class ApplicationController < ActionController::Base
 
   private
 
+  ##
+  # Shows a message as a flash notice and logs it as an error.
+  #
+  # @param [String] message_text the message to show and log
+  #
   def show_and_log_flash_notice(message_text)
     flash.now[:notice] = message_text
     logger.error message_text
