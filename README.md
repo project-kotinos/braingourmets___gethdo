@@ -21,4 +21,3 @@ The `doc` rake task builds the documentation in `doc/`. If there already is
 some documentation in this directory, this task will _not_ overwrite it.
 
 It is recommended to generally use the `yard` task instead.
-
