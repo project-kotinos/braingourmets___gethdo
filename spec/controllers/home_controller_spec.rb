@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe HomeController do
   describe 'GET #index' do
-    render_views
     it 'gets home/index with application layout' do
       get :index
 
@@ -46,14 +45,6 @@ describe HomeController do
 
         expect(flash.now[:notice]).to eq('tlh translation not available')
       end
-    end
-
-    # render_views can be removed once this test has been moved to an
-    # acceptance test.
-    it 'includes the Gethdo title' do
-      get :index
-
-      expect(response.body).to include(I18n.t 'views.home.index.heading')
     end
   end
 end
