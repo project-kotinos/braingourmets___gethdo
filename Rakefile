@@ -9,7 +9,7 @@ Gethdo::Application.load_tasks
 task default: :test
 
 task test: [
-    :travis_lint, :rubocop, :reek, :rails_best_practices, :brakeman,
+    :rubocop, :reek, :rails_best_practices, :brakeman,
     :haml_lint, :scss_lint, :coffeelint, :spec
 ]
 
