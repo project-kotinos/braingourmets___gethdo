@@ -6,14 +6,9 @@ gem 'rails', '4.0.3'
 # Use Haml for HTML templates (http://haml.info)
 gem 'haml'
 
-# Use the current Sass release Media Mark (compatible to Compass 0.2.12)
-gem 'sass', '~> 3.2.12'
-
 # Use SCSS for stylesheets
+gem 'sass'
 gem 'sass-rails'
-
-# Use Compass for Sass
-gem 'compass', '~> 0.12.2'
 
 # Use Sass mixin library Bourbon (http://bourbon.io)
 gem 'bourbon'
