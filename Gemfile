@@ -5,6 +5,7 @@ gem 'rails', '4.0.3'
 
 # Use Haml for HTML templates (http://haml.info)
 gem 'haml'
+gem 'haml-rails'
 
 # Use SCSS for stylesheets
 gem 'sass'
