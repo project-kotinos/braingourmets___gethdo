@@ -61,7 +61,7 @@ group :test do
   gem 'rails_best_practices'
   gem 'brakeman'
   gem 'haml-lint'
-  gem 'scss-lint'
+  gem 'scss-lint', '>= 0.17.0'
   gem 'coffeelint'
 
   # Testing
