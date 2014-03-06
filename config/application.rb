@@ -27,5 +27,9 @@ module Gethdo
         ENV[key.to_s] = value
       end if File.exists?(env_file)
     end
+
+    config.generators do |g|
+      g.test_framework :rspec
+    end
   end
 end
