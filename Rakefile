@@ -38,7 +38,7 @@ task :haml_lint do
 end
 
 task :scss_lint do
-  sh 'scss-lint app/assets/stylesheets/'
+  sh 'scss-lint -c config/scss_lint.yml app/assets/stylesheets/'
 end
 
 task :yard do
