@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.0.4'
+# This is required to work around a problem with sass, sass-rails, sprockets.
+gem 'sprockets', '2.11.0'
 
 # Use Haml for HTML templates (http://haml.info)
 gem 'haml'
