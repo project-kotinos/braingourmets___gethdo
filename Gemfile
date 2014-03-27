@@ -28,6 +28,9 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster.
 gem 'turbolinks'
 
+# HTML form convenience
+gem 'formtastic', '>= 2.3.0rc'
+
 # Use Twitter Bootstrap Sass
 gem 'bootstrap-sass'
 
