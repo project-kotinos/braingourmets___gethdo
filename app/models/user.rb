@@ -5,7 +5,7 @@
 #
 class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :lockable,
-         :recoverable, :rememberable, :trackable, :validatable, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable
 
   validates :encrypted_password, presence: true
 end
