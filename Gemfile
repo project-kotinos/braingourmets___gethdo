@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.4'
+gem 'rails', '4.1.0'
 # This is required to work around a problem with sass, sass-rails, sprockets.
 gem 'sprockets', '2.11.0'
 
@@ -40,6 +40,10 @@ gem 'valle'
 # Authentication
 gem 'devise'
 
+# The time-zone stuff is required for deploying with Rails 4.1.
+gem 'tzinfo'
+gem 'tzinfo-data'
+
 group :production do
   gem 'mysql2'
 end
@@ -52,8 +56,6 @@ end
 group :development do
   # Use CoffeeScript source maps
   gem 'coffee-rails-source-maps'
-  # Provide better Sprockets errors (only necessary for Rails < 4.1)
-  gem 'sprockets_better_errors'
   # Provide better error pages
   gem 'better_errors'
   gem 'binding_of_caller'
