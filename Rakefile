@@ -9,13 +9,9 @@ Gethdo::Application.load_tasks
 task default: :test
 
 task test: [
-  :rubocop, :reek, :rails_best_practices, :brakeman, :travis_lint,
+  :rubocop, :reek, :rails_best_practices, :brakeman,
   :haml_lint, :scss_lint, :coffeelint, :spec
 ]
-
-task :travis_lint do
-  sh 'travis-lint'
-end
 
 task :rubocop do
   sh 'rubocop --rails app/ spec/ Gemfile Rakefile'
