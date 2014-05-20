@@ -17,13 +17,13 @@ class ApplicationController < ActionController::Base
   #
   def set_i18n_local_from_parameters
     locale = params[:locale]
-    if locale
-      if I18n.locale_available? locale
-        I18n.locale = locale
-      else
-        show_and_log_flash_notice("#{locale} translation not available")
-        I18n.locale = I18n.default_locale
-      end
+    return false unless locale
+
+    if I18n.locale_available? locale
+      I18n.locale = locale
+    else
+      show_and_log_flash_notice("#{locale} translation not available")
+      I18n.locale = I18n.default_locale
     end
   end
 
