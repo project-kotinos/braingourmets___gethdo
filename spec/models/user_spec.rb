@@ -10,24 +10,28 @@ describe User do
   describe '#email' do
     it 'is required' do
       user.email = nil
-      expect(user).to have(1).error_on(:email)
+      user.valid?
+      expect(user.errors[:email].size).to eq(1)
     end
 
     it 'is invalid without @' do
       user.email = 'joe at example.com'
-      expect(user).to have(1).error_on(:email)
+      user.valid?
+      expect(user.errors[:email].size).to eq(1)
     end
 
     it 'is unique' do
       another_user = build(:user, email: user.email)
-      expect(another_user).to have(1).error_on(:email)
+      another_user.valid?
+      expect(another_user.errors[:email].size).to eq(1)
     end
   end
 
   describe '#encrypted_password' do
     it 'is required' do
       user.encrypted_password = nil
-      expect(user).to have(1).error_on(:encrypted_password)
+      user.valid?
+      expect(user.errors[:encrypted_password].size).to eq(1)
     end
   end
 end
