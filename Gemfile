@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.3'
+gem 'rails', '4.1.4'
 # This is required to work around a problem with sass, sass-rails, sprockets.
 gem 'sprockets', '2.11.0'
 gem 'sprockets-rails', require: 'sprockets/railtie'
