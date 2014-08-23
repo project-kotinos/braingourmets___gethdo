@@ -34,5 +34,5 @@ task :scss_lint do
 end
 
 task :yard do
-  sh 'yard doc'
+  sh 'yard doc/api'
 end

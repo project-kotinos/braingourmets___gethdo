@@ -12,7 +12,7 @@ Things Done approach by David Allen.
 
 ### yard
 
-The `yard` rake task builds the documentation in `doc/`. If there already is
+The `yard` rake task builds the documentation in `doc/api/`. If there already is
 some documentation in this directory, this task will overwrite it.
 
 ### doc

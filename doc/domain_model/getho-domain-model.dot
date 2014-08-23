@@ -1,0 +1,129 @@
+digraph GethdoDomainModel {
+
+  //
+  // Layout basics
+  //
+
+  fontname = "Bitstream Vera Sans, Arial"
+  fontsize = 8
+
+  node [
+    fontname = "Bitstream Vera Sans, Arial"
+    fontsize = 8
+    shape = "record"
+  ]
+
+  edge [
+    fontname = "Bitstream Vera Sans, Arial"
+    fontsize = 8
+  ]
+
+
+  //
+  // Entities
+  //
+
+   Context [label = "Context"]
+   Project [label = "{Project | category}"]
+   Task    [label = "{Task | title\ndue_date\nstart_date\nis_flagged}"]
+   User    [label = "User"]
+
+
+  //
+  // Relations without labels
+  //
+
+  edge [
+    label = ""
+    arrowtail = ""
+    dir = ""
+  ]
+
+  User -> Context [taillabel="1"    headlabel="*"]
+  User -> Project [taillabel="1"    headlabel="*"]
+  User -> Task    [taillabel="1"    headlabel="*"]
+  Task -> Context [taillabel="*"    headlabel="0..1"]
+  Task -> Project [taillabel="*"    headlabel="0..1"]
+  
+
+  //
+  // Relations with labels
+  //
+
+  edge [
+    arrowtail = ""
+    dir = ""
+  ]
+
+
+  //
+  // Inheritance
+  //
+
+  edge [
+    taillabel = ""
+    headlabel = ""
+    arrowtail = "empty"
+    dir = "back"
+    label = ""
+  ]
+
+
+  //
+  // Notes
+  //
+
+  node [
+    fontname = "Bitstream Vera Sans, Arial"
+    fontsize = 8
+    shape = "note"
+    style = filled
+    color = lightgrey
+ ]
+
+  edge [
+    style = dashed
+    arrowtail = "none"
+    arrowhead = "none"
+    label = ""
+    color = grey
+  ]
+
+  Note_Project [label = "project_category:\nthis_week, soon,\nsomeday_maybe"]
+  Project -> Note_Project
+
+  Note_Task [label = "no project = Inbox"]
+  Task -> Note_Task
+
+
+  //
+  // Invisible edges to improve the layout
+  //
+
+  edge [
+    style = invis
+    label = ""
+  ]
+
+
+  //
+  // Questions
+  //
+
+  node [
+    fontname = "Bitstream Vera Sans, Arial"
+    fontsize = 8
+    shape = ellipse
+    style = filled
+    color = orange
+  ]
+
+  edge [
+    style = dashed
+    arrowtail = "none"
+    arrowhead = "none"
+    label = ""
+    color = orange
+  ]
+
+}
