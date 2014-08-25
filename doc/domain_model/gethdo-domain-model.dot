@@ -1,3 +1,5 @@
+// How to generate the SVG file:
+// dot -Tsvg -odoc/domain_model/gethdo-domain-model.svg doc/domain_model/gethdo-domain-model.dot
 digraph GethdoDomainModel {
 
   //
@@ -44,7 +46,7 @@ digraph GethdoDomainModel {
   User -> Task    [taillabel="1"    headlabel="*"]
   Task -> Context [taillabel="*"    headlabel="0..1"]
   Task -> Project [taillabel="*"    headlabel="0..1"]
-  
+
 
   //
   // Relations with labels
