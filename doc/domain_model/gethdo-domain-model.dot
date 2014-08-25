@@ -39,6 +39,8 @@ digraph GethdoDomainModel {
     label = ""
     arrowtail = ""
     dir = ""
+    arrowhead = "open"
+    arrowsize = .4
   ]
 
   User -> Context [taillabel="1"    headlabel="*"]
@@ -68,6 +70,7 @@ digraph GethdoDomainModel {
     arrowtail = "empty"
     dir = "back"
     label = ""
+    arrowsize = 1
   ]
 
 
@@ -80,7 +83,8 @@ digraph GethdoDomainModel {
     fontsize = 8
     shape = "note"
     style = filled
-    color = lightgrey
+    color = cornflowerblue
+    fillcolor = white
  ]
 
   edge [
@@ -88,7 +92,7 @@ digraph GethdoDomainModel {
     arrowtail = "none"
     arrowhead = "none"
     label = ""
-    color = grey
+    color = cornflowerblue
   ]
 
   Note_Project [label = "project_category:\nthis_week, soon,\nsomeday_maybe"]
