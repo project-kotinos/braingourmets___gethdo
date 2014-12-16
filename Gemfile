@@ -11,7 +11,7 @@ gem 'haml-rails'
 
 # Use SCSS for stylesheets
 gem 'sass'
-gem 'sass-rails', '~> 5.0.0.beta1'
+gem 'sass-rails'
 
 # Use Sass mixin library Bourbon (http://bourbon.io)
 gem 'bourbon'

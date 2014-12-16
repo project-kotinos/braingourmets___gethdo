@@ -14,7 +14,7 @@
     %p.notice= notice
     %p.alert= alert
 
-    %p{class: %w('navbar text pull-right')}
+    %p.navbar.text.pull-right
       - if user_signed_in?
         Logged in as
         = succeed '.' do
