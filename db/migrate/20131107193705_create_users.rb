@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.boolean :email_is_validated
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 
