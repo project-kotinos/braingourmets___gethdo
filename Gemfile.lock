@@ -64,6 +64,8 @@ GEM
     bundler-audit (0.3.1)
       bundler (~> 1.2)
       thor (~> 0.18)
+    byebug (4.0.5)
+      columnize (= 0.9.0)
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -87,6 +89,7 @@ GEM
       execjs
       json
     colored (1.2)
+    columnize (0.9.0)
     concord (0.1.5)
       adamantium (~> 0.2.0)
       equalizer (~> 0.0.9)
@@ -297,6 +300,11 @@ GEM
       activesupport
     warden (1.2.3)
       rack (>= 1.0)
+    web-console (2.1.2)
+      activemodel (>= 4.0)
+      binding_of_caller (>= 0.7.2)
+      railties (>= 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
     xpath (2.0.0)
       nokogiri (~> 1.3)
     yard (0.8.7.6)
@@ -310,6 +318,7 @@ DEPENDENCIES
   bootstrap-sass
   bourbon
   bundler-audit
+  byebug
   capybara
   coffee-rails
   coffee-rails-source-maps
@@ -341,4 +350,5 @@ DEPENDENCIES
   tzinfo-data
   uglifier
   valle
+  web-console
   yard

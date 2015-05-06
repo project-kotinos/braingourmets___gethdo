@@ -40,7 +40,7 @@ gem 'valle'
 # Authentication
 gem 'devise'
 
-# The time-zone stuff is required for deploying with Rails 4.1.
+# The time-zone stuff is required for deployment.
 gem 'tzinfo'
 gem 'tzinfo-data'
 
@@ -49,8 +49,11 @@ group :production do
 end
 
 group :development, :test do
-  # Use sqlite3 as the database for Active Record
+  # Use sqlite3 as the database for Active Record.
   gem 'sqlite3'
+  # Spring speeds up development by keeping your application running in the
+  # background. Read more: https://github.com/rails/spring
+  gem 'spring'
 end
 
 group :development do
@@ -59,6 +62,12 @@ group :development do
   # Provide better error pages
   gem 'better_errors'
   gem 'binding_of_caller'
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger
+  # console.
+  gem 'byebug'
+  # Access an IRB console on exception pages or by using <%= console %> in
+  # views.
+  gem 'web-console'
 end
 
 group :test do
@@ -76,7 +85,6 @@ group :test do
   # Testing
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  gem 'spring'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'coveralls', require: false
