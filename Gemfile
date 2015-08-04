@@ -34,9 +34,6 @@ gem 'formtastic'
 # Use Twitter Bootstrap Sass
 gem 'bootstrap-sass'
 
-# Automatically add foreign keys for migrations
-gem 'schema_auto_foreign_keys'
-
 # Automatic length validation for field values
 gem 'valle'
 
