@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
 
   describe '#email' do
     it { is_expected.to validate_presence_of(:email) }
-    it { is_expected.to validate_uniqueness_of(:email) }
+    it { is_expected.to validate_uniqueness_of(:email).case_insensitive }
 
     context 'without @' do
       before { user.email = 'jane at example.com' }
