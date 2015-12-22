@@ -29,7 +29,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # HTML form convenience
-gem 'formtastic'
+gem 'simple_form'
 
 # Use Twitter Bootstrap Sass
 gem 'bootstrap-sass'

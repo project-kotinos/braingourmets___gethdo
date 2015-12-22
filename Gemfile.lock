@@ -129,8 +129,6 @@ GEM
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
-    formtastic (3.1.3)
-      actionpack (>= 3.2.13)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     haml (4.0.7)
@@ -269,12 +267,15 @@ GEM
     sexp_processor (4.6.0)
     shoulda-matchers (3.0.1)
       activesupport (>= 4.0.0)
+    simple_form (3.2.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     simplecov (0.11.1)
       docile (~> 1.1.0)
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    spring (1.6.0)
+    spring (1.6.1)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -341,7 +342,6 @@ DEPENDENCIES
   database_cleaner
   devise
   factory_girl_rails
-  formtastic
   haml
   haml-lint
   haml-rails
@@ -356,6 +356,7 @@ DEPENDENCIES
   sass-rails
   scss_lint
   shoulda-matchers
+  simple_form
   spring
   sprockets
   sprockets-rails
