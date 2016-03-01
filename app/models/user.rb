@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ##
 # This model represents a user, i.e., a person that can log in.
 #

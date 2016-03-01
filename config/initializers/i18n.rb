@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Enable i18n warnings to avoid the deprecation warning.
 I18n.enforce_available_locales = true
 
