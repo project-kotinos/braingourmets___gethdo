@@ -5,9 +5,11 @@
 #
 # @author Oliver Klee
 #
-class User < ActiveRecord::Base
+class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :lockable,
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :encrypted_password, presence: true
+
+  self.table_name = 'users'
 end

@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # Rails
-gem 'rails', '4.2.7.1'
+gem 'rails', '5.0.0.1'
 gem 'sprockets'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 
@@ -46,6 +46,9 @@ gem 'devise'
 gem 'tzinfo'
 gem 'tzinfo-data'
 
+# Use Puma as the app server
+gem 'puma'
+
 group :production do
   gem 'mysql2'
 end
@@ -53,6 +56,7 @@ end
 group :development, :test do
   # Use sqlite3 as the database for Active Record.
   gem 'sqlite3'
+
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -61,9 +65,14 @@ end
 group :development do
   # Use CoffeeScript source maps
   gem 'coffee-rails-source-maps'
+
   # Provide better error pages
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  # Listen for file changes
+  gem 'listen'
+  gem 'spring-watcher-listen'
 end
 
 group :test do
@@ -80,6 +89,7 @@ group :test do
 
   # Testing
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'capybara', require: false

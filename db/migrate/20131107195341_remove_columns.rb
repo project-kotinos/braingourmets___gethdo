@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class RemoveColumns < ActiveRecord::Migration
+class RemoveColumns < ActiveRecord::Migration[4.2]
   def self.up
     remove_column :users, :gender
     remove_column :users, :first_name
