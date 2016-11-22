@@ -298,9 +298,6 @@ GEM
     uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.1.1)
-    valle (1.1.2)
-      activerecord (>= 3.0)
-      activesupport
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -358,7 +355,6 @@ DEPENDENCIES
   tzinfo
   tzinfo-data
   uglifier
-  valle
   yard
 
 BUNDLED WITH

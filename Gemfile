@@ -36,9 +36,6 @@ gem 'simple_form'
 # Use Twitter Bootstrap Sass
 gem 'bootstrap-sass'
 
-# Automatic length validation for field values
-gem 'valle'
-
 # Authentication
 gem 'devise'
 

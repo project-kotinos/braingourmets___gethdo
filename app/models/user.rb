@@ -10,6 +10,4 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :encrypted_password, presence: true
-
-  self.table_name = 'users'
 end
