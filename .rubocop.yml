@@ -1,5 +1,2 @@
 AllCops:
   TargetRubyVersion: 2.3
-# This cop only makes sense in Rails >= 5.
-Rails/HttpPositionalArguments:
-  Enabled: false

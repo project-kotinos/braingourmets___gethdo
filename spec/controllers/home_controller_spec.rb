@@ -18,13 +18,13 @@ RSpec.describe HomeController, type: :controller do
       end
 
       it 'uses the EN locale with an EN locale parameter' do
-        get :index, locale: 'en'
+        get :index, params: { locale: 'en' }
 
         expect(I18n.locale).to eq(:en)
       end
 
       it 'uses the DE locale with an DE locale parameter' do
-        get :index, locale: 'de'
+        get :index, params: { locale: 'de' }
 
         expect(I18n.locale).to eq(:de)
       end
@@ -36,14 +36,13 @@ RSpec.describe HomeController, type: :controller do
       end
 
       it 'uses the default locale with an invalid locale parameter' do
-        get :index, locale: 'tlh'
+        get :index, params: { locale: 'tlh' }
 
         expect(I18n.locale).to eq(I18n.default_locale)
       end
 
       it 'adds flash notice with an invalid locale parameter' do
-        invalid_locale = 'tlh'
-        get :index, locale: invalid_locale
+        get :index, params: { locale: 'tlh' }
 
         expect(flash.now[:notice]).to eq('tlh translation not available')
       end
