@@ -2,10 +2,10 @@
 
 require 'rails_helper'
 
-RSpec.describe HomeController, type: :controller do
+RSpec.describe HomeController, type: :request do
   describe 'GET #index' do
     it 'is successful' do
-      get :index
+      get home_index_url
 
       assert_response :success
     end
@@ -16,31 +16,31 @@ RSpec.describe HomeController, type: :controller do
       end
 
       it 'uses the EN locale with an EN locale parameter' do
-        get :index, params: { locale: 'en' }
+        get home_index_url, params: { locale: 'en' }
 
         expect(I18n.locale).to eq(:en)
       end
 
       it 'uses the DE locale with an DE locale parameter' do
-        get :index, params: { locale: 'de' }
+        get home_index_url, params: { locale: 'de' }
 
         expect(I18n.locale).to eq(:de)
       end
 
       it 'uses the default locale without a locale parameter' do
-        get :index
+        get home_index_url
 
         expect(I18n.locale).to eq(I18n.default_locale)
       end
 
       it 'uses the default locale with an invalid locale parameter' do
-        get :index, params: { locale: 'tlh' }
+        get home_index_url, params: { locale: 'tlh' }
 
         expect(I18n.locale).to eq(I18n.default_locale)
       end
 
       it 'adds flash notice with an invalid locale parameter' do
-        get :index, params: { locale: 'tlh' }
+        get home_index_url, params: { locale: 'tlh' }
 
         expect(flash.now[:notice]).to eq('tlh translation not available')
       end
