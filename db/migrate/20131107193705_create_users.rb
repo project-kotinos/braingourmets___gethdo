@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateUsers < ActiveRecord::Migration[4.2]
+class CreateUsers < ActiveRecord::Migration[5.0]
   def up
     create_table :users do |t|
       t.integer :gender

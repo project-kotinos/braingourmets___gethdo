@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddEmailConfirmable < ActiveRecord::Migration[4.2]
+class AddEmailConfirmable < ActiveRecord::Migration[5.0]
   def self.up
     change_table(:users) do |t|
       ## Confirmable
