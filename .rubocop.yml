@@ -1,4 +1,9 @@
 AllCops:
   TargetRubyVersion: 2.4
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
 Style/IndentationConsistency:
   EnforcedStyle: rails
