@@ -39,10 +39,6 @@ gem 'bootstrap-sass'
 # Authentication
 gem 'devise'
 
-# The time-zone stuff is required for deployment.
-gem 'tzinfo'
-gem 'tzinfo-data'
-
 # Use Puma as the app server
 gem 'puma'
 
