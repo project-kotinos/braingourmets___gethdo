@@ -6,5 +6,5 @@ Metrics/BlockLength:
     - 'Rakefile'
     - '**/*.rake'
     - 'spec/**/*.rb'
-Style/IndentationConsistency:
+Layout/IndentationConsistency:
   EnforcedStyle: rails
