@@ -1,6 +1,6 @@
 AllCops:
   TargetRubyVersion: 2.4
-  TargetRailsVersion: 5.0
+  TargetRailsVersion: 5.1
 Metrics/BlockLength:
   Exclude:
     - 'Rakefile'
