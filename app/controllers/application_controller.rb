@@ -6,8 +6,6 @@
 # @author Oliver Klee
 #
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
-
   before_action :set_i18n_local_from_parameters
 
   protected

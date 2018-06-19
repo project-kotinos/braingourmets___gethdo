@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # Rails
-gem 'rails', '5.1.6'
+gem 'rails', '5.2.0'
 gem 'sprockets'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 
@@ -41,6 +41,9 @@ gem 'devise'
 
 # Use Puma as the app server
 gem 'puma'
+
+# Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', require: false
 
 group :production do
   gem 'mysql2'
