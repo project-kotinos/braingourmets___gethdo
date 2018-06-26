@@ -11,7 +11,7 @@ RSpec.describe HomeController, type: :request do
     end
 
     describe 'locales' do
-      before(:each) do
+      before do
         I18n.locale = I18n.default_locale
       end
 

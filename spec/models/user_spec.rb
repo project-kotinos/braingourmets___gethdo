@@ -17,7 +17,7 @@ RSpec.describe User, type: :model do
     context 'without @' do
       before { user.email = 'jane at example.com' }
 
-      it { is_expected.to_not be_valid }
+      it { is_expected.not_to be_valid }
     end
   end
 

@@ -2,17 +2,17 @@
 
 require 'rails_helper'
 
-RSpec.feature 'the home page', type: :feature do
-  before { @path = '/' }
+RSpec.describe 'the home page', type: :feature do
+  let(:path) { '/' }
 
-  feature 'The page' do
-    before { visit @path }
+  describe 'The page' do
+    before { visit path }
 
-    scenario 'has "Getho" as HTML title' do
+    it 'has "Getho" as HTML title' do
       expect(page).to have_title('Gethdo')
     end
 
-    scenario 'mentions "Gethdo" somewhere' do
+    it 'mentions "Gethdo" somewhere' do
       expect(page).to have_text('Gethdo')
     end
   end
