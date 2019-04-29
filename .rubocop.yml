@@ -8,4 +8,6 @@ Metrics/BlockLength:
     - 'spec/**/*.rb'
 Layout/IndentationConsistency:
   EnforcedStyle: rails
-require: rubocop-rspec
+require:
+  - rubocop-rspec
+  - rubocop-performance
